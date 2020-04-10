@@ -6,7 +6,7 @@ VC     ?= ./vc
 
 VCFILE := v.c
 TMPTCC := /var/tmp/tcc
-VCREPO := https://github.com/vlang/vc
+VCREPO := https://github.com/albard00/vc
 TCCREPO := https://github.com/vlang/tccbin
 GITCLEANPULL := git clean -xf && git pull --quiet
 GITFASTCLONE := git clone --depth 1 --quiet
