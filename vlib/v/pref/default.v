@@ -77,6 +77,10 @@ fn default_c_compiler() string {
 	// return fast_clang
 	// }
 	// TODO fix $if after 'string'
+	env_cc := os.getenv('CC')
+	if env_cc != '' {
+		return env_cc
+	}
 	$if windows {
 		return 'gcc'
 	}
